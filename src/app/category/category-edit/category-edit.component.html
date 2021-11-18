@@ -1,0 +1,10 @@
+<form [formGroup]="categoryForm">
+  <input type="text" name="id" formControlName="id">
+  <div class="mb-3">
+    <label class="form-label">Name</label>
+    <input type="text" class="form-control" name="name" formControlName="name">
+  </div>
+  <a [routerLink]="['/category-list']" class="btn btn-secondary">Back</a>
+  <a [routerLink]="['/category-list']" class="btn btn-primary" (click)="editCategory(category.id)">Edit</a>
+</form>
+
